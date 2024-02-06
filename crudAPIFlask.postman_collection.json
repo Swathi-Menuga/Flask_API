@@ -1,0 +1,154 @@
+{
+	"info": {
+		"_postman_id": "1308be81-4238-4351-bede-4c0a07116fb6",
+		"name": "crudAPIFlask",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32761708",
+		"_collection_link": "https://lunar-space-160776.postman.co/workspace/New-Team-Workspace~bb90c2f5-9d09-4b8a-bfff-370764b589cc/collection/32761708-1308be81-4238-4351-bede-4c0a07116fb6?action=share&source=collection_link&creator=32761708"
+	},
+	"item": [
+		{
+			"name": "Get account by ID",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"first_name\":\"swathi\",\r\n    \"last_name\":\"menuga\",\r\n    \"email\":\"swathi@gmail.com\",\r\n    \"password\":\"swathi123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/accounts/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"accounts",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get accounts",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"{\r",
+							"    \"first\"\r",
+							"}"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"first_name\":\"swathi\",\r\n    \"last_name\":\"menuga\",\r\n    \"email\":\"swathi@gmail.com\",\r\n    \"password\":\"swathi123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/accounts",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"accounts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Account",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/accounts/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"accounts",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update account ",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"first_name\":\"updatedswathi\",\r\n    \"last_name\":\"menuga\",\r\n    \"email\":\"swathi@gmail.com\",\r\n    \"password\":\"swathi123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/accounts/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"accounts",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
